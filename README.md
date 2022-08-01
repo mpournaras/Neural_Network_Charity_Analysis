@@ -69,8 +69,4 @@ No. While I was able to beat the intial models (accuracy = **0.71848**) performa
 
 ## Summary
 
-The relu, sigmoid, and tanh activations yielded a **72.7%** accuracy, which is the best the model could produce using various number of neurons and layers. The next step should be to try the random forest classifier as it is less influenced by outliers.
-
-A good model to recommend is the Random Forest model because Random Forest is good for classification problems. Using this model (reference: AlphabetSoupCharity_Forest.ipynb) produces a **78%** accuracy.
-
-
+The relu, sigmoid, and tanh activations yielded a **72.7%** accuracy, which is the best the model could produce using various number of neurons and layers. **The next step should be to try the random forest classifier as it is less influenced by outliers.**
