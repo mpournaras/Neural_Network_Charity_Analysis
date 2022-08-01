@@ -65,7 +65,7 @@ In addition to optimization 2..
 
 2. Were you able to achieve the target model performance?
 
-No. While I was able to beat the intial models (accuracy = **0.71848**) performace with an optimized accuracy of **0.72653**, I was unable to meet the target of 0.75
+No. While I was able to beat the intial models (accuracy = **0.71848**) performace with an optimized accuracy of **0.72688**, I was unable to meet the target of 0.75
 
 ## Summary
 
