@@ -35,54 +35,42 @@ The features of this model are the APPLICATION, TYPE, AFFILIATION, CLASSIFICATIO
 
 ### Compiling, Training, and Evaluating the Model
 
-1. How many neurons, layers, and and activation functions did you select for your neural network model, and why?
+1. How many neurons, layers, and and activation functions did you select for your neural network model, and why? What steps did you take to try and increase model performance?
 
-I tried 3 optimizations:
+I tried 3 optimizations after the initial model:
 
-Optimization 1:
+Initial Model:
+![image 0](https://github.com/mpournaras/Neural_Network_Charity_Analysis/blob/main/resources/mod_0_Sum.png)
+
+**Optimization 1:**
 * Dropped STATUS and SPECIAL_CONSIDERATION
 * increased epochs 
 
-Optimization 2:
+![image 1](https://github.com/mpournaras/Neural_Network_Charity_Analysis/blob/main/resources/opti_1_Sum.png)
+
+**Optimization 2:**
 In addition to optimization 1..
 * added a 3rd layer. I chose 5 units and a "tanh" activation
 * changed output layer to "sigmoid" activation
 
-Optimization 3:
+![image 2](https://github.com/mpournaras/Neural_Network_Charity_Analysis/blob/main/resources/opti_2_Sum.png)
+
+**Optimization 3:**
 In addition to optimization 2..
 * added a 4th layer. I chose 5 units and a "tanh" activation
 * changed units in layer 1-3 to 135, 45, and 15 respectivly 
 * changed the first layer to "relu" activation to speed up the model
 
-2. Were you able to achieve the target model performance?
-ANSWER: Yes 
+![image 3](https://github.com/mpournaras/Neural_Network_Charity_Analysis/blob/main/resources/opti_3_Sum.png)
 
-3. What steps did you take to try and increase model performance?
-ANSWER: It required converting the NAME column into data points, which has the biggest impact on improving efficiency. And, it also required adding a third layer and using the "sigmoid" activation function for the 2nd and 3rd layer.
+2. Were you able to achieve the target model performance?
+
+No. While I was able to beat the intial models (accuracy = **0.71848**) performace with an optimized accuracy of **0.72653**, I was unable to meet the target of 0.75
 
 ## Summary
 
-Overall, by increasing the accuracy above 75% we are able to correctly classify each of the points in the test data 75% of the time. And, an applicant has a 80% chance of being successful if they have the following:
-* The NAME of the applicant appears more than 5 times (they have applied more than 5 times)
-* The type of APPLICATION is one of the following; T3, T4, T5, T6, T7, T8, T10, and T19
-* The application has the following CLASSIFICATION; C1000, C2000, C3000, C1200, and C2100.
+The relu, sigmoid, and tanh activations yielded a **72.7%** accuracy, which is the best the model could produce using various number of neurons and layers. The next step should be to try the random forest classifier as it is less influenced by outliers.
 
-A good model to recommend is the Random Forest model because Random Forest is good for classification problems. Using this model produces a 78% accuracy.
+A good model to recommend is the Random Forest model because Random Forest is good for classification problems. Using this model (reference: AlphabetSoupCharity_Forest.ipynb) produces a **78%** accuracy.
 
 
-Deliverable 3:
-
-Optimization 1:
-*Dropped STATUS and SPECIAL_CONSIDERATION
-*&increased epochs 
-
-Optimization 2:
-In addition to optimization 1..
-* added a 3rd layer. I chose 5 units and a "tanh" activation
-* changed output layer to "sigmoid" activation
-
-Optimization 3:
-In addition to optimization 2..
-* added a 4th layer. I chose 5 units and a "tanh" activation
-* changed units in layer 1-3 to 135, 45, and 15 respectivly 
-* changed the first layer to "relu" activation to speed up the model
